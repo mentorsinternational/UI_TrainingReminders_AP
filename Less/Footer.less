@@ -4,11 +4,17 @@ footer{
     flex-direction: column;
     border-top: 1px dashed black;
     padding-top: 2rem;
+    margin-top: 2rem;
+    background: @header-bg;
+    color: white;
 
     h3{
         font-size: 1.5rem;
         display: none;
-
+        color: olive;
+@media @desktop {
+    display: block;
+}
     }
     h4{
         font-size: 1.3rem;
@@ -16,10 +22,16 @@ footer{
     }
     p{
         font-size: 1.2rem;
+        color: olive;
         height: 7rem;
-        border: 1px solid red;
         display: none;
-        
+        @media @desktop {
+            display: block;
+            width: 45%;
+            padding-top: 1rem;
+            line-height: 1.5rem;
+            padding-bottom: 3rem;
+        }
     }
     li{
         padding-bottom: 1rem;

@@ -124,6 +124,8 @@ table {
 }
 header {
   background: #000000cc;
+  line-height: 1.3rem;
+  font-family: 'helvetica', sans-serif;
 }
 header nav {
   display: flex;
@@ -135,6 +137,7 @@ header nav a {
   color: #f3f3f3;
   font-size: 1.3rem;
   transition: 1s;
+  padding-bottom: 1.2rem;
 }
 header nav a:hover {
   transform: scale(1.2);
@@ -145,10 +148,19 @@ footer {
   flex-direction: column;
   border-top: 1px dashed black;
   padding-top: 2rem;
+  margin-top: 2rem;
+  background: #000000cc;
+  color: white;
 }
 footer h3 {
   font-size: 1.5rem;
   display: none;
+  color: olive;
+}
+@media screen and (min-width: 880px) {
+  footer h3 {
+    display: block;
+  }
 }
 footer h4 {
   font-size: 1.3rem;
@@ -156,9 +168,18 @@ footer h4 {
 }
 footer p {
   font-size: 1.2rem;
+  color: olive;
   height: 7rem;
-  border: 1px solid red;
   display: none;
+}
+@media screen and (min-width: 880px) {
+  footer p {
+    display: block;
+    width: 45%;
+    padding-top: 1rem;
+    line-height: 1.5rem;
+    padding-bottom: 3rem;
+  }
 }
 footer li {
   padding-bottom: 1rem;
@@ -168,15 +189,32 @@ footer li {
   min-width: 200px;
   margin: 0 auto;
   text-align: center;
-  background: lightgray;
+}
+.container .top-desktop-img {
+  display: none;
+}
+@media screen and (min-width: 880px) {
+  .container .top-desktop-img {
+    display: flex;
+    min-width: 100%;
+    max-height: 8rem;
+    padding-bottom: 2rem;
+  }
 }
 .container .top-border-img {
   max-width: 100%;
   padding-bottom: 2rem;
+  max-height: 8rem;
+}
+@media screen and (min-width: 880px) {
+  .container .top-border-img {
+    display: none;
+  }
 }
 .container .top-img {
   max-width: 90%;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  border-radius: 2.5rem;
 }
 .container .middle-img {
   max-width: 95%;
@@ -184,11 +222,15 @@ footer li {
 }
 .about {
   max-width: 95%;
-  padding-left: 8px;
+  line-height: 1.4rem;
+  font-family: 'helvetica', sans-serif;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 .about h2 {
   font-size: 3.8rem;
   padding-bottom: 8px;
+  line-height: 3.1rem;
 }
 .about p {
   font-size: 1.2rem;
@@ -199,11 +241,14 @@ footer li {
 }
 .what-we-do {
   max-width: 95%;
-  padding-left: 8px;
+  font-family: 'helvetica', sans-serif;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 .what-we-do h2 {
   font-size: 3.8rem;
   padding: 20px;
+  line-height: 3.1rem;
 }
 .what-we-do p {
   font-size: 1.2rem;
@@ -211,40 +256,71 @@ footer li {
   border-bottom: 1px dashed black;
   padding-left: 1.5rem;
   text-align: left;
+  line-height: 1.3rem;
 }
 .CTA {
   display: block;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  margin-left: 2.5rem;
+  margin-right: 2rem;
   border-bottom: 1px dashed black;
+  line-height: 1.4rem;
+  font-family: 'helvetica', sans-serif;
 }
 .CTA h2 {
   font-size: 3.8rem;
   padding-bottom: 1.5rem;
-  padding-left: 1rem;
+  padding-left: 2rem;
   width: 90%;
+  line-height: 3.4rem;
 }
 .CTA p {
   font-size: 1.2rem;
   padding-left: 3.5rem;
   padding-bottom: 1rem;
-  max-width: 80%;
+  max-width: 90%;
   text-align: left;
 }
 .CTA button {
   height: 30px;
   width: 45%;
   font-size: 1rem;
-  background-color: #62cdff;
+  background-color: dodgerblue;
+  color: darkgoldenrod;
   box-shadow: 3px 5px 4px gray;
+  font-weight: bold;
 }
 .CTA button:hover {
   transform: scale(1.5);
+  cursor: pointer;
+  background-color: darkgoldenrod;
+  color: dodgerblue;
 }
 .testimonials {
   padding-top: 2rem;
   margin-left: 10%;
   width: 80%;
+  line-height: 1.3rem;
+  font-family: 'helvetica', sans-serif;
+}
+@media screen and (min-width: 500px) {
+  .testimonials {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 880px) {
+  .testimonials {
+    width: 75%;
+    margin-left: 14%;
+  }
+}
+.testimonials .success-stories {
+  height: auto;
+  border: 2px solid darkolivegreen;
+  margin: 2rem;
+  border-radius: 1rem;
+  background-color: lightgray;
 }
 .testimonials h2 {
   font-size: 2.4rem;
@@ -252,21 +328,35 @@ footer li {
 .testimonials h3 {
   font-size: 2rem;
   padding-top: 1rem;
+  line-height: 2rem;
 }
 .testimonials p {
   font-size: 1.1rem;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  padding: 1rem;
   text-align: center;
 }
 .testimonials a {
   text-decoration: none;
-  font-size: 1.7rem;
-  color: #62cdff;
+  font-size: 0.9rem;
+  color: dodgerblue;
+  cursor: pointer;
+  font-weight: bold;
 }
-.testimonials a:hover {
-  transform: scale(1.2);
+@media screen and (min-width: 500px) {
+  .testimonials a {
+    font-size: 1.2rem;
+  }
 }
 .testimonials img {
-  padding-top: 2rem;
+  height: auto;
+  margin-top: 2rem;
   width: 65%;
+  border-radius: 1.2rem;
+}
+@media screen and (min-width: 880px) {
+  .testimonials img {
+    width: 50%;
+  }
 }
