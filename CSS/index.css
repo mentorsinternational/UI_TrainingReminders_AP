@@ -122,8 +122,47 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-html {
-  background: grey;
+header {
+  background: #000000cc;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1.5rem;
+}
+header nav a {
+  text-decoration: none;
+  color: #f3f3f3;
+  font-size: 1.3rem;
+  transition: 1s;
+}
+header nav a:hover {
+  transform: scale(1.2);
+}
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-top: 1px dashed black;
+  padding-top: 2rem;
+}
+footer h3 {
+  font-size: 1.5rem;
+  display: none;
+}
+footer h4 {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+footer p {
+  font-size: 1.2rem;
+  height: 7rem;
+  border: 1px solid red;
+  display: none;
+}
+footer li {
+  padding-bottom: 1rem;
+  font-size: 1rem;
 }
 .container {
   min-width: 200px;
@@ -131,24 +170,103 @@ html {
   text-align: center;
   background: lightgray;
 }
-.container .top-img {
+.container .top-border-img {
   max-width: 100%;
+  padding-bottom: 2rem;
+}
+.container .top-img {
+  max-width: 90%;
+  padding-bottom: 2rem;
 }
 .container .middle-img {
-  max-width: 100%;
+  max-width: 95%;
+  padding-top: 2rem;
 }
-.container #donate-side-btn {
+.about {
+  max-width: 95%;
+  padding-left: 8px;
+}
+.about h2 {
+  font-size: 3.8rem;
+  padding-bottom: 8px;
+}
+.about p {
+  font-size: 1.2rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  border-bottom: 1px dashed black;
+  text-align: left;
+}
+.what-we-do {
+  max-width: 95%;
+  padding-left: 8px;
+}
+.what-we-do h2 {
+  font-size: 3.8rem;
+  padding: 20px;
+}
+.what-we-do p {
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px dashed black;
+  padding-left: 1.5rem;
+  text-align: left;
+}
+.CTA {
   display: block;
-  background: #1cc31c;
-  height: 15px;
-  width: 70px;
-  padding: 8px 16px;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  font-size: 17px;
-  line-height: 17px;
-  font-weight: bold;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dashed black;
+}
+.CTA h2 {
+  font-size: 3.8rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  width: 90%;
+}
+.CTA p {
+  font-size: 1.2rem;
+  padding-left: 3.5rem;
+  padding-bottom: 1rem;
+  max-width: 80%;
+  text-align: left;
+}
+.CTA button {
+  height: 30px;
+  width: 45%;
+  font-size: 1rem;
+  background-color: #62cdff;
+  box-shadow: 3px 5px 4px gray;
+}
+.CTA button:hover {
+  transform: scale(1.5);
+}
+.testimonials {
+  padding-top: 2rem;
+  margin-left: 10%;
+  width: 80%;
+}
+.testimonials h2 {
+  font-size: 2.4rem;
+}
+.testimonials h3 {
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+.testimonials p {
+  font-size: 1.1rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+.testimonials a {
   text-decoration: none;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  font-size: 1.7rem;
+  color: #62cdff;
+}
+.testimonials a:hover {
+  transform: scale(1.2);
+}
+.testimonials img {
+  padding-top: 2rem;
+  width: 65%;
 }
