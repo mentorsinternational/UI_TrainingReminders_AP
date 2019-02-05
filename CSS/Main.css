@@ -1,22 +1,29 @@
-html {
-    background: grey;
-}
-.container {
+
+nav {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 500px;
-    margin:auto 0;
+    justify-content: space-between;
 }
 
+.container {
+min-width: 200px;
+margin: 0 auto;
+text-align: center;
+background: lightgray;
+}
+
+
+
 .top-img{
-    max-width: 500px;
+    max-width: 100%;
 }
 
 .middle-img{
-    max-width: 500px;
+    max-width: 100%;
 }
 
+.top-border-img {
+    max-width: 100%;
+}
 
 #donate-side-btn {
     display: block;
