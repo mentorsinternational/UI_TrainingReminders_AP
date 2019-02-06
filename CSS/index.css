@@ -213,36 +213,65 @@ footer li {
 }
 .container .top-img {
   max-width: 90%;
-  padding-top: 1rem;
   border-radius: 2.5rem;
 }
 .container .middle-img {
   max-width: 95%;
   padding-top: 2rem;
 }
-.about {
-  max-width: 95%;
+.new-app {
+  max-width: 60%;
   line-height: 1.4rem;
   font-family: 'helvetica', sans-serif;
-  margin-left: 2rem;
+  margin-left: 20%;
+  border-bottom: 1px dashed black;
+  padding-bottom: 3rem;
+}
+.new-app h2 {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  line-height: 3rem;
+}
+.new-app button {
+  height: 45px;
+  width: 45%;
+  font-size: 1rem;
+  background-color: dodgerblue;
+  color: darkgoldenrod;
+  box-shadow: 3px 5px 4px gray;
+  font-weight: bold;
+}
+.new-app button:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+  background-color: darkgoldenrod;
+  color: dodgerblue;
+}
+.about {
+  max-width: 60%;
+  line-height: 1.4rem;
+  font-family: 'helvetica', sans-serif;
+  margin-left: 20%;
   margin-right: 2rem;
 }
 .about h2 {
   font-size: 3.8rem;
-  padding-bottom: 8px;
+  padding-bottom: 1rem;
   line-height: 3.1rem;
+  padding-top: 2rem;
 }
 .about p {
   font-size: 1.2rem;
   padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
   padding-left: 1.5rem;
   border-bottom: 1px dashed black;
   text-align: left;
 }
 .what-we-do {
-  max-width: 95%;
+  max-width: 60%;
   font-family: 'helvetica', sans-serif;
-  margin-left: 2rem;
+  margin-left: 20%;
   margin-right: 2rem;
 }
 .what-we-do h2 {
@@ -262,7 +291,7 @@ footer li {
   display: block;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  margin-left: 2.5rem;
+  margin-left: 20%;
   margin-right: 2rem;
   border-bottom: 1px dashed black;
   line-height: 1.4rem;
@@ -271,25 +300,23 @@ footer li {
 .CTA h2 {
   font-size: 3.8rem;
   padding-bottom: 1.5rem;
-  padding-left: 2rem;
-  width: 90%;
+  width: 80%;
   line-height: 3.4rem;
 }
 .CTA p {
   font-size: 1.2rem;
-  padding-left: 3.5rem;
   padding-bottom: 1rem;
-  max-width: 90%;
-  text-align: left;
+  max-width: 80%;
 }
 .CTA button {
-  height: 30px;
+  height: 45px;
   width: 45%;
   font-size: 1rem;
   background-color: dodgerblue;
   color: darkgoldenrod;
   box-shadow: 3px 5px 4px gray;
   font-weight: bold;
+  margin-right: 14%;
 }
 .CTA button:hover {
   transform: scale(1.5);
@@ -301,21 +328,31 @@ footer li {
   padding-top: 2rem;
   margin-left: 10%;
   width: 80%;
-  line-height: 1.3rem;
+  line-height: 1.8rem;
   font-family: 'helvetica', sans-serif;
 }
-@media screen and (min-width: 500px) {
-  .testimonials {
-    width: 75%;
-  }
+.testimonials .success-stories1 {
+  height: auto;
+  border: 2px solid darkolivegreen;
+  margin: 2rem;
+  border-radius: 1rem;
+  background-color: lightgray;
 }
-@media screen and (min-width: 880px) {
-  .testimonials {
-    width: 75%;
-    margin-left: 14%;
-  }
+.testimonials .success-stories2 {
+  height: auto;
+  border: 2px solid darkolivegreen;
+  margin: 2rem;
+  border-radius: 1rem;
+  background-color: lightgray;
 }
-.testimonials .success-stories {
+.testimonials .success-stories3 {
+  height: auto;
+  border: 2px solid darkolivegreen;
+  margin: 2rem;
+  border-radius: 1rem;
+  background-color: lightgray;
+}
+.testimonials .success-stories4 {
   height: auto;
   border: 2px solid darkolivegreen;
   margin: 2rem;

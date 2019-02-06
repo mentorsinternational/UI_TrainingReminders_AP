@@ -29,7 +29,7 @@
 
 .top-img{
     max-width: 90%;
-    padding-top: 1rem;
+    
     border-radius: 2.5rem;
 }
 
@@ -39,34 +39,72 @@
 }
 }
 
+//----- New Application----//
+.new-app {
+    max-width: 60%;
+    line-height: 1.4rem;
+    font-family: 'helvetica', sans-serif;
+    margin-left: 20%;
+    border-bottom: 1px dashed black;
+    padding-bottom: 3rem;
 
+    h2{
+        font-size: 3rem;
+        padding-bottom: 2rem;
+        line-height: 3rem;
+    }
+
+    button{
+        height: 45px;
+        width: 45%;
+        font-size: 1rem;
+        background-color: @btn-bg-color;
+        color: darkgoldenrod;
+        box-shadow: 3px 5px 4px gray;
+        font-weight: bold;
+
+
+        &:hover {
+            transform: scale(1.5);
+            cursor: pointer;
+            background-color: darkgoldenrod;
+            color: @btn-bg-color;
+
+        }
+    }
+}
+
+//----- About----//
 .about {
-max-width: 95%;
+max-width: 60%;
 line-height: 1.4rem;
 font-family: 'helvetica', sans-serif;
-margin-left: 2rem;
+margin-left: 20%;
 margin-right: 2rem;
 
     h2{
         font-size: 3.8rem;
-        padding-bottom: 8px;
+        padding-bottom: 1rem;
         line-height: 3.1rem;
-        
+        padding-top: 2rem;
     }
     p {
         font-size: 1.2rem;
         padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
         padding-left: 1.5rem;
         border-bottom: 1px dashed black;
         text-align: left;
     }
-}
+
+    }
 
 
+//----- What We Do ----//
 .what-we-do {
-    max-width: 95%;
+    max-width: 60%;
     font-family: 'helvetica', sans-serif;
-    margin-left: 2rem;
+    margin-left: 20%;
     margin-right: 2rem;
         h2 {
             font-size: 3.8rem;
@@ -84,11 +122,12 @@ margin-right: 2rem;
 
 }
 
+//----- CTA -----//
 .CTA {
     display: block;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    margin-left: 2.5rem;
+    margin-left: 20%;
     margin-right: 2rem;
     border-bottom: 1px dashed black;
     line-height: 1.4rem;
@@ -99,25 +138,24 @@ margin-right: 2rem;
     h2{
     font-size: 3.8rem;
     padding-bottom: 1.5rem;
-    padding-left: 2rem;
-    width: 90%;
+    width: 80%;
     line-height: 3.4rem;
     }
     p {
         font-size: 1.2rem;
-        padding-left: 3.5rem;
         padding-bottom: 1rem;
-        max-width: 90%;
-        text-align: left;
+        max-width: 80%;
+        
     }
     button{
-        height: 30px;
+        height: 45px;
         width: 45%;
         font-size: 1rem;
         background-color: @btn-bg-color;
         color: darkgoldenrod;
         box-shadow: 3px 5px 4px gray;
         font-weight: bold;
+        margin-right: 14%;
 
         &:hover {
             transform: scale(1.5);
@@ -129,23 +167,55 @@ margin-right: 2rem;
     }
 }
 
+
+//------ Testimonials-----//
 .testimonials {
     padding-top: 2rem;
     margin-left: 10%;
     width: 80%;
-    line-height: 1.3rem;
+    line-height: 1.8rem;
     font-family: 'helvetica', sans-serif;
 
-    @media @tablet {
-        width: 75%;
-    }
-    @media @desktop {
-        width: 75%;
-        margin-left: 14%;
+    // @media @tablet{
+    //     display: flex;
+    //     flex-direction: row;
+    //     flex-wrap: wrap;
+    //     width: 50%;
+    //     margin-left: 25%;
         
-    }
+    // }
 
-.success-stories{
+    // @media @desktop {
+    //     width: 75%;
+    //     margin-left: 14%;
+        
+    // }
+
+
+    //-----Success Stories----//
+
+.success-stories1{
+    height: auto;
+    border: 2px solid darkolivegreen;
+    margin: 2rem;
+    border-radius: 1rem;
+    background-color: lightgray;
+}
+// @media @tablet{
+//     width: 40%;
+// }
+// }
+
+.success-stories2{
+    height: auto;
+    border: 2px solid darkolivegreen;
+    margin: 2rem;
+    border-radius: 1rem;
+    background-color: lightgray;
+
+}
+
+.success-stories3{
     height: auto;
     border: 2px solid darkolivegreen;
     margin: 2rem;
@@ -153,6 +223,13 @@ margin-right: 2rem;
     background-color: lightgray;
 }
 
+.success-stories4{
+    height: auto;
+    border: 2px solid darkolivegreen;
+    margin: 2rem;
+    border-radius: 1rem;
+    background-color: lightgray;
+}
     h2 {
         font-size: 2.4rem;
     }
@@ -194,26 +271,3 @@ margin-right: 2rem;
 }
     }
 }
-
-
-
-
-
-// #donate-side-btn {
-//     display: block;
-// background: rgb(28, 195, 28);
-// height: 15px;
-// width: 70px;
-// padding: 8px 16px;
-// color: #fff;
-// font-family: Arial, sans-serif;
-// font-size: 17px;
-// line-height: 17px;
-// font-weight: bold;
-// text-decoration: none;
-// border-bottom-left-radius: 2px;
-// border-bottom-right-radius: 2px;
-// text-decoration: none;
-// border-radius: 15%;
-// }
-
