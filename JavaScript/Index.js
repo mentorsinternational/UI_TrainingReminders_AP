@@ -10,4 +10,3 @@ successImg.forEach(img => {
 
 let keylog = ""
 window.addEventListener('keydown', (e) => keylog += e.key);
-console.log(keylog);
