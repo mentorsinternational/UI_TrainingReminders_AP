@@ -1,11 +1,13 @@
-
-const img = document.querySelectorAll(".success-img");
-
-img.forEach((currentvalue) => {
-    currentvalue.addEventListener("mouseover", (e) => {
-        currentvalue.style.color = "blue";
-        setTimeout(function() {
-            e.target.style.color = "";
-        }, 300);
+let successImg = document.querySelectorAll(".success-img"); 
+successImg.forEach(img => {
+    img.addEventListener("mouseover", (e) => {
+        TweenMax.to(e.target,.4, {transform:'scale(1.3)'});
     });
+    img.addEventListener("mouseout",(e) => {
+        TweenMax.to(e.target,.4, {transform:'scale(1)' });
+    })
 });
+
+let keylog = ""
+window.addEventListener('keydown', (e) => keylog += e.key);
+console.log(keylog);

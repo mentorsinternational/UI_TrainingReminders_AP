@@ -20,8 +20,6 @@
 .top-border-img {
     max-width: 100%;
     padding-bottom: 2rem;
-    max-height: 8rem;
-
 @media @desktop{
     display: none;
 }
@@ -53,7 +51,7 @@
         padding-bottom: 2rem;
         line-height: 3rem;
     }
-
+    
     button{
         height: 45px;
         width: 45%;
@@ -62,6 +60,7 @@
         color: darkgoldenrod;
         box-shadow: 3px 5px 4px gray;
         font-weight: bold;
+        margin-top: 2rem;
 
 
         &:hover {
@@ -176,62 +175,49 @@ margin-right: 2rem;
     line-height: 1.8rem;
     font-family: 'helvetica', sans-serif;
 
-    // @media @tablet{
-    //     display: flex;
-    //     flex-direction: row;
-    //     flex-wrap: wrap;
-    //     width: 50%;
-    //     margin-left: 25%;
+    @media @tablet{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50%;
+        margin-left: 25%;
         
-    // }
+    }
 
-    // @media @desktop {
-    //     width: 75%;
-    //     margin-left: 14%;
+    @media @desktop {
+        width: 75%;
+        margin-left: 14%;
         
-    // }
+    }
 
 
     //-----Success Stories----//
 
-.success-stories1{
+.success-stories{
     height: auto;
     border: 2px solid darkolivegreen;
     margin: 2rem;
     border-radius: 1rem;
     background-color: lightgray;
 }
-// @media @tablet{
-//     width: 40%;
-// }
-// }
-
-.success-stories2{
-    height: auto;
-    border: 2px solid darkolivegreen;
-    margin: 2rem;
-    border-radius: 1rem;
-    background-color: lightgray;
+@media @tablet{
+    width: 40%;
+    margin-left: 30%;
 
 }
-
-.success-stories3{
-    height: auto;
-    border: 2px solid darkolivegreen;
-    margin: 2rem;
-    border-radius: 1rem;
-    background-color: lightgray;
 }
 
-.success-stories4{
-    height: auto;
-    border: 2px solid darkolivegreen;
-    margin: 2rem;
-    border-radius: 1rem;
-    background-color: lightgray;
-}
+
+
     h2 {
         font-size: 2.4rem;
+        line-height: 3rem;
+        @media @desktop {
+            margin-left: 20%;
+        }
+        @media @tablet {
+
+        }
     }
     h3{
         font-size: 2rem;
@@ -259,7 +245,7 @@ margin-right: 2rem;
         }
         
     
-    img {
+    .success-img {
         
         height: auto;
         margin-top: 2rem;
@@ -268,6 +254,44 @@ margin-right: 2rem;
         
 @media @desktop {
     width: 50%;
+  
 }
     }
+
+
+
+
+
+//-------Team Page Styles-----//
+
+h2{
+    font-size: 4rem;
+}
+
+.scrum {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    width: 40%;
+}
+
+.backend{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    width: 40%;
+}
+
+.frontend {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    width: 40%;
+}
+
+.UI{
+    display: flex;
+    flex-direction: column;
+        margin-left: 30%;
+    width: 40%;
 }
