@@ -1,278 +1,143 @@
 // Main Content Styles //
 
 
-.container {
-    min-width: 200px;
+.container{
+    min-width: 100px;
+    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
 
+    a{
+        margin: 15px;
+    }
     
-    .top-desktop-img {
-        display:none;
+    h2{
+        font-size: 2.5rem;
+        margin: 5px;
+    }
 
+    h3{
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+    
+    p{
+        font-size: 1.2rem;
+        line-height: 1.7rem; 
+        margin: 10px;
+        max-width: 600px;
+        text-align: justify;
+        
+
+    }
+    
+    img{
+        max-width: 80%;
+        height:auto;
+        margin: auto;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+    @media @tablet {
+        img{
+            max-height: 500px;
+        }
+}
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px auto;
+    padding: 15px 0;
+    width: 95%;
+    border: 1px solid @border-color;
+    border-radius: 10px;
+    // box-shadow: -1px 10px teal;
+}
+}
+
+.success-stories{
+    height: auto;
+    border: 2px solid darkolivegreen;
+    margin: 20px auto;
+    border-radius: 1rem;
+    background-color: lightgray;
+}
+
+//------ Button----//
+button{
+    height: 45px;
+    width: 400px;
+    font-size: 1rem;
+    background-color: @btn-bg-color;
+    color: darkgoldenrod;
+    box-shadow: 3px 5px 4px gray;
+    font-weight: bold;
+
+
+    &:hover {
+        transform: scale(1.5);
+        cursor: pointer;
+        background-color: darkgoldenrod;
+        color: @btn-bg-color;
+
+    }
+}
+
+//----- Border Imgs----//
+    #top-desktop-img {
+        display:none;
+        max-height: 20%;
         @media @desktop{
-            display: flex;
+            display: block;
             min-width: 100%;
-            max-height: 8rem;
-            padding-bottom: 2rem;
+            max-height: 11vh;
+            height: 10%;
+            border-radius: 0;
+            margin: 0 auto;
+
         }
     }
-.top-border-img {
-    max-width: 100%;
+
+    #top-border-img {
+    min-width: 100%;
     padding-bottom: 2rem;
+    border-radius: 0;
+    margin: 0 auto;
+
 @media @desktop{
     display: none;
 }
 }
 
-.top-img{
-    max-width: 90%;
+//----- Testimonials Anchor----//
+.testimonials a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: @btn-bg-color;
+    cursor: pointer;
+    font-weight: bold;
     
-    border-radius: 2.5rem;
-}
-
-.middle-img{
-    max-width: 95%;
-    padding-top: 2rem;
-}
-}
-
-//----- New Application----//
-.new-app {
-    max-width: 60%;
-    line-height: 1.4rem;
-    font-family: 'helvetica', sans-serif;
-    margin-left: 20%;
-    border-bottom: 1px dashed black;
-    padding-bottom: 3rem;
-
-    h2{
-        font-size: 3rem;
-        padding-bottom: 2rem;
-        line-height: 3rem;
+    @media @tablet {
+        font-size: 1.5rem;
     }
-    
-    button{
-        height: 45px;
-        width: 45%;
-        font-size: 1rem;
-        background-color: @btn-bg-color;
-        color: darkgoldenrod;
-        box-shadow: 3px 5px 4px gray;
-        font-weight: bold;
-        margin-top: 2rem;
-
-
-        &:hover {
-            transform: scale(1.5);
-            cursor: pointer;
-            background-color: darkgoldenrod;
-            color: @btn-bg-color;
-
-        }
-    }
-}
-
-//----- About----//
-.about {
-max-width: 60%;
-line-height: 1.4rem;
-font-family: 'helvetica', sans-serif;
-margin-left: 20%;
-margin-right: 2rem;
-
-    h2{
-        font-size: 3.8rem;
-        padding-bottom: 1rem;
-        line-height: 3.1rem;
-        padding-top: 2rem;
-    }
-    p {
-        font-size: 1.2rem;
-        padding-bottom: 1.5rem;
-        padding-top: 1.5rem;
-        padding-left: 1.5rem;
-        border-bottom: 1px dashed black;
-        text-align: left;
-    }
+    @media @desktop{
+        font-size: 2.0rem;
 
     }
-
-
-//----- What We Do ----//
-.what-we-do {
-    max-width: 60%;
-    font-family: 'helvetica', sans-serif;
-    margin-left: 20%;
-    margin-right: 2rem;
-        h2 {
-            font-size: 3.8rem;
-            padding: 20px;
-            line-height: 3.1rem;
-        }
-        p {
-            font-size: 1.2rem;
-            padding-bottom: 2.0rem;
-            border-bottom: 1px dashed black;
-            padding-left: 1.5rem;
-            text-align: left;
-            line-height: 1.3rem;
-        }
-
-}
-
-//----- CTA -----//
-.CTA {
-    display: block;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    margin-left: 20%;
-    margin-right: 2rem;
-    border-bottom: 1px dashed black;
-    line-height: 1.4rem;
-    font-family: 'helvetica', sans-serif;
-
-    
-
-    h2{
-    font-size: 3.8rem;
-    padding-bottom: 1.5rem;
-    width: 80%;
-    line-height: 3.4rem;
     }
-    p {
-        font-size: 1.2rem;
-        padding-bottom: 1rem;
-        max-width: 80%;
-        
-    }
-    button{
-        height: 45px;
-        width: 45%;
-        font-size: 1rem;
-        background-color: @btn-bg-color;
-        color: darkgoldenrod;
-        box-shadow: 3px 5px 4px gray;
-        font-weight: bold;
-        margin-right: 14%;
-
-        &:hover {
-            transform: scale(1.5);
-            cursor: pointer;
-            background-color: darkgoldenrod;
-            color: @btn-bg-color;
-
-        }
-    }
-}
-
-
-//------ Testimonials-----//
-.testimonials {
-    padding-top: 2rem;
-    margin-left: 10%;
-    width: 80%;
-    line-height: 1.8rem;
-    font-family: 'helvetica', sans-serif;
-
-    @media @tablet{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 50%;
-        margin-left: 25%;
-        
-    }
-
-    @media @desktop {
-        width: 75%;
-        margin-left: 14%;
-        
-    }
-
-
-    //-----Success Stories----//
-
-.success-stories{
-    height: auto;
-    border: 2px solid darkolivegreen;
-    margin: 2rem;
-    border-radius: 1rem;
-    background-color: lightgray;
-}
-@media @tablet{
-    width: 40%;
-    margin-left: 30%;
-
-}
-}
-
-
-
-    h2 {
-        font-size: 2.4rem;
-        line-height: 3rem;
-        @media @desktop {
-            margin-left: 20%;
-        }
-        @media @tablet {
-
-        }
-    }
-    h3{
-        font-size: 2rem;
-        padding-top: 1rem;
-        line-height: 2rem;
-    }
-    p{
-        font-size: 1.1rem;
-        padding-top: 1.5rem;
-        padding-bottom: 2rem;
-        padding: 1rem;
-        text-align: center;
-
-    }
-    a {
-        text-decoration: none;
-        font-size: .9rem;
-        color: @btn-bg-color;
-        cursor: pointer;
-        font-weight: bold;
-        
-        @media @tablet {
-            font-size: 1.2rem;
-        }
-        }
-        
-    
-    .success-img {
-        
-        height: auto;
-        margin-top: 2rem;
-        width: 65%;
-        border-radius: 1.2rem;
-        
-@media @desktop {
-    width: 50%;
-
-}
-    }
-
-
-
 
 
 //-------Team Page Styles-----//
 
-h2{
-    font-size: 4rem;
-}
 
 .scrum {
     display: flex;
     flex-direction: column;
     margin-left: 30%;
-    width: 40%;
+    width: 400px;
+    max-height: 400px
 }
 
 .backend{
@@ -280,13 +145,20 @@ h2{
     flex-direction: column;
     margin-left: 30%;
     width: 40%;
+    max-height: 400px;
+    max-width: 400px;
+    margin-bottom: 5rem;
 }
 
 .frontend {
     display: flex;
     flex-direction: column;
     margin-left: 30%;
-    width: 40%;
+    max-height: 400px;
+    max-width: 400px;
+    margin-bottom: 19rem;
+    padding-left: 4rem;
+
 }
 
 .UI{
@@ -294,4 +166,6 @@ h2{
     flex-direction: column;
         margin-left: 30%;
     width: 40%;
+    max-height: 400px;
+    max-width: 400px;
 }
