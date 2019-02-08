@@ -6,7 +6,7 @@ LAMBDA SCHOOL 2019.
 
 You are to treat this week as if you are working as a front end developer at a web development agency. The instructor is the owner of the agency and is under pressure from the client to deliver the product, a custom marketing website, on time. The project managers are acting as your supervisors.
 
-This week you will be building a website for a non-profit. Mentor International have requested a minimum viable product to deliver to their board of directors by the end of the week. The requirements are listed below under MVP Features.Mentors International also have a wish list of extra features they would love to showcase to the board if you can get them done. You will demonstrate your work to the agency owner Thursday afternoon.
+This week you will be building a website for a non-profit. Mentor International have requested a minimum viable product to deliver to their board of directors by the end of the week. The requirements are listed below under MVP Features. Mentors International also have a wish list of extra features they would love to showcase to the board if you can get them done. You will demonstrate your work to the agency owner Thursday afternoon.
 
 You will use Trello to report your progress on the MVP and any extra features you accomplish to your project managers every day during standup. This project is meant to be worked on by yourself. Do not pair program this week as this challenge is meant to show you where you can improve and what you have learned on your own.
 Pro Tips For This Week:
@@ -25,9 +25,22 @@ Trello Set Up:
 [x] Fill in the stretch list with stretch tasks
 [x] Share your board with the Project Manager that has been assigned to you. If you have not been assigned yet, reach out to your lead TA for guidance
 
-Assets Provided:
+Project Set Up
+Task 1: Set Up The Project With Git
 
-[x] Nothing
+[X]     Fork the project into your GitHub user account
+[x]     Clone the forked project into a directory on your machine
+[x]     Create your own branch to work off of
+[x]     You are now ready to build this project with your preferred IDE
+
+Task 2: Set up your preprocessor
+
+[x]     Verify that you have LESS installed correctly by running lessc -v       in your terminal, if you don't get a version message back, you'll          need to install it.
+[x]     Open your terminal and navigate to your preprocessing project by        using the cd command
+[x]     Once in your project's root folder, run the following command           less-watch-compiler less css style.less
+[x]     Verify your compiler is working correctly by changing the               background-color on the html selector to red in your style.less     file.
+[x]     Once you see the red screen, you can delete that style and you're       ready to start coding
+
 
 MVP Features:
 
@@ -41,9 +54,38 @@ These MVP features represent the fundamental knowledge you should have obtained 
         [x] Add variables
 [x]    Build layout : Navigation system design
         [x] link to react app
-[]    Build Custom Component HTML/LESS/JavaScript
+[x]    Build Custom Component HTML/LESS/JavaScript
 
 Once you have accomplished the required MVP features, reach out to your project manager for approval to work on extra features of your choice. This project does not end at MVP. Try to get as many extra features into your project as you can before the demonstration!
+
+
+Libraries & Frameworks
+
+The following were used in this project:
+
+[x]        LESS
+[x]        GSAP
+
+The Web Foundations Units explored were:
+
+[x]     User Interfaces
+[x]     Git for Web Development
+[x]     Responsive Design
+[x]     Pre-Processors
+[x]     JavaScript Fundamentals
+[x]     DOM
+[X]     Components
+
+Pages Built:
+
+Marketing Page
+
+This is the homepage which includes content and copy that relates to the product that our team was working on. Descriptions about the product and about the features it provides are included.
+
+Teams Page
+
+A section that includes images of the members of our team, and links to their socials/Github.
+
 
 Extra Features:
 
